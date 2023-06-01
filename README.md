@@ -7,4 +7,4 @@
 ## installation:
 `devtools::install_github(repo = "Jwenyi/gin_seurat")`
 ## Modification
-The original `Seurat` did not support larget scRNA data integration via CCA as their dependent package `Matrix` could not process a long vector over 2^31. I used `spam` to replace `Matrix` to fix this.
+The original `Seurat` did not support larget scRNA data integration via CCA as their dependent package `Matrix` could not process a long vector over 2^31. I replace `Matrix` with `spam64` to fix this.
