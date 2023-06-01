@@ -3,20 +3,8 @@
 [![CRAN Version](https://www.r-pkg.org/badges/version/Seurat)](https://cran.r-project.org/package=Seurat)
 [![CRAN Downloads](https://cranlogs.r-pkg.org/badges/Seurat)](https://cran.r-project.org/package=Seurat)
 
-# Seurat v4.3.0
-
-Seurat is an R toolkit for single cell genomics, developed and maintained by the Satija Lab at NYGC.
-
-Instructions, documentation, and tutorials can be found at:
-
-* https://satijalab.org/seurat
-
-Seurat is also hosted on GitHub, you can view and clone the repository at
-
-* https://github.com/satijalab/seurat
-
-Seurat has been successfully installed on Mac OS X, Linux, and Windows, using the devtools package to install directly from GitHub
-
-Improvements and new features will be added on a regular basis, please post on the [github page](https://github.com/satijalab/seurat) with any questions or if you would like to contribute
-
-For a version history/changelog, please see the [NEWS file](https://github.com/satijalab/seurat/blob/master/NEWS.md).
+# Gin-modified Seurat v4.3.0
+## installation:
+'devtools::install_github(repo = "Jwenyi/gin_seurat")'
+## Modification
+The original 'Seurat' did not support larget scRNA data integration via CCA as their dependent package 'Matrix' could not process a long vector over 2^31. I used 'spam' to replace 'Matrix' to fix this.
