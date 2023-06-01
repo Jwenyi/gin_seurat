@@ -1,4 +1,4 @@
-Package: Seurat
+Package: Gin_Seurat
 Version: 4.3.0
 Date: 2022-11-18
 Title: Tools for Single Cell Genomics
@@ -73,6 +73,8 @@ Imports:
     shiny,
     spatstat.explore,
     spatstat.geom,
+    spam,
+    spam64,
     stats,
     tibble,
     tools,
